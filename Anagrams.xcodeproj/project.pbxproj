@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB262C2F19AAA84000420616 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB262C2E19AAA84000420616 /* main.m */; };
+		AB262C3219AAA84000420616 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB262C3119AAA84000420616 /* AppDelegate.m */; };
+		AB262C3819AAA84000420616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB262C3619AAA84000420616 /* Main.storyboard */; };
+		AB262C3A19AAA84000420616 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB262C3919AAA84000420616 /* Images.xcassets */; };
+		AB262C4619AAA84000420616 /* AnagramsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB262C4519AAA84000420616 /* AnagramsTests.m */; };
+		AB262C5119AAB75200420616 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB262C5019AAB75200420616 /* ResultsTableViewController.m */; };
+		AB3F75D019AC0C4A000904C5 /* WordTree.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75CF19AC0C4A000904C5 /* WordTree.m */; };
+		AB3F75D119AC0C4A000904C5 /* WordTree.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75CF19AC0C4A000904C5 /* WordTree.m */; };
+		AB3F75D419AC0C63000904C5 /* LetterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75D319AC0C63000904C5 /* LetterNode.m */; };
+		AB3F75D519AC0C63000904C5 /* LetterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75D319AC0C63000904C5 /* LetterNode.m */; };
+		AB3F75D819AC0C7B000904C5 /* DictionaryImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75D719AC0C7B000904C5 /* DictionaryImporter.m */; };
+		AB3F75D919AC0C7B000904C5 /* DictionaryImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75D719AC0C7B000904C5 /* DictionaryImporter.m */; };
+		AB3F75DC19AC0E27000904C5 /* sowpods.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB3F75DB19AC0E27000904C5 /* sowpods.txt */; };
+		AB3F75DD19AC0E27000904C5 /* sowpods.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB3F75DB19AC0E27000904C5 /* sowpods.txt */; };
+		AB6392B619AD4CD20073FE8C /* TreeClimber.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6392B519AD4CD20073FE8C /* TreeClimber.m */; };
+		AB6392B719AD4CD20073FE8C /* TreeClimber.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6392B519AD4CD20073FE8C /* TreeClimber.m */; };
+		AB6392BA19AD53700073FE8C /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6392B919AD53700073FE8C /* SearchViewController.m */; };
+		AB92710A19B6875400F6BA88 /* twl06.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB92710919B6875400F6BA88 /* twl06.txt */; };
+		AB92710B19B6875400F6BA88 /* twl06.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB92710919B6875400F6BA88 /* twl06.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB262C4019AAA84000420616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB262C2119AAA84000420616 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB262C2819AAA84000420616;
+			remoteInfo = Anagrams;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB262C2919AAA84000420616 /* Anagrams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anagrams.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB262C2D19AAA84000420616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB262C2E19AAA84000420616 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB262C3019AAA84000420616 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB262C3119AAA84000420616 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB262C3719AAA84000420616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB262C3919AAA84000420616 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB262C3F19AAA84000420616 /* AnagramsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnagramsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB262C4419AAA84000420616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB262C4519AAA84000420616 /* AnagramsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnagramsTests.m; sourceTree = "<group>"; };
+		AB262C4F19AAB75200420616 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
+		AB262C5019AAB75200420616 /* ResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
+		AB3F75CE19AC0C4A000904C5 /* WordTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTree.h; sourceTree = "<group>"; };
+		AB3F75CF19AC0C4A000904C5 /* WordTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTree.m; sourceTree = "<group>"; };
+		AB3F75D219AC0C63000904C5 /* LetterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetterNode.h; sourceTree = "<group>"; };
+		AB3F75D319AC0C63000904C5 /* LetterNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetterNode.m; sourceTree = "<group>"; };
+		AB3F75D619AC0C7B000904C5 /* DictionaryImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryImporter.h; sourceTree = "<group>"; };
+		AB3F75D719AC0C7B000904C5 /* DictionaryImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryImporter.m; sourceTree = "<group>"; };
+		AB3F75DB19AC0E27000904C5 /* sowpods.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sowpods.txt; sourceTree = "<group>"; };
+		AB6392B419AD4CD20073FE8C /* TreeClimber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeClimber.h; sourceTree = "<group>"; };
+		AB6392B519AD4CD20073FE8C /* TreeClimber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeClimber.m; sourceTree = "<group>"; };
+		AB6392B819AD53700073FE8C /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		AB6392B919AD53700073FE8C /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		AB92710919B6875400F6BA88 /* twl06.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = twl06.txt; sourceTree = "<group>"; };
+		ABB2B59A19AE10D3004748D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB262C2619AAA84000420616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB262C3C19AAA84000420616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB262C2019AAA84000420616 = {
+			isa = PBXGroup;
+			children = (
+				ABB2B59A19AE10D3004748D5 /* README.md */,
+				AB262C2B19AAA84000420616 /* Anagrams */,
+				AB262C4219AAA84000420616 /* AnagramsTests */,
+				AB262C2A19AAA84000420616 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB262C2A19AAA84000420616 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB262C2919AAA84000420616 /* Anagrams.app */,
+				AB262C3F19AAA84000420616 /* AnagramsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB262C2B19AAA84000420616 /* Anagrams */ = {
+			isa = PBXGroup;
+			children = (
+				AB3F75DA19AC0CBC000904C5 /* Resources */,
+				AB3F75CD19AC0C1A000904C5 /* Models */,
+				AB262C3019AAA84000420616 /* AppDelegate.h */,
+				AB262C3119AAA84000420616 /* AppDelegate.m */,
+				AB6392B819AD53700073FE8C /* SearchViewController.h */,
+				AB6392B919AD53700073FE8C /* SearchViewController.m */,
+				AB262C4F19AAB75200420616 /* ResultsTableViewController.h */,
+				AB262C5019AAB75200420616 /* ResultsTableViewController.m */,
+				AB262C3619AAA84000420616 /* Main.storyboard */,
+				AB262C3919AAA84000420616 /* Images.xcassets */,
+				AB262C2C19AAA84000420616 /* Supporting Files */,
+			);
+			path = Anagrams;
+			sourceTree = "<group>";
+		};
+		AB262C2C19AAA84000420616 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB262C2D19AAA84000420616 /* Info.plist */,
+				AB262C2E19AAA84000420616 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB262C4219AAA84000420616 /* AnagramsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB262C4519AAA84000420616 /* AnagramsTests.m */,
+				AB262C4319AAA84000420616 /* Supporting Files */,
+			);
+			path = AnagramsTests;
+			sourceTree = "<group>";
+		};
+		AB262C4319AAA84000420616 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB262C4419AAA84000420616 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB3F75CD19AC0C1A000904C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB3F75CE19AC0C4A000904C5 /* WordTree.h */,
+				AB3F75CF19AC0C4A000904C5 /* WordTree.m */,
+				AB3F75D219AC0C63000904C5 /* LetterNode.h */,
+				AB3F75D319AC0C63000904C5 /* LetterNode.m */,
+				AB3F75D619AC0C7B000904C5 /* DictionaryImporter.h */,
+				AB3F75D719AC0C7B000904C5 /* DictionaryImporter.m */,
+				AB6392B419AD4CD20073FE8C /* TreeClimber.h */,
+				AB6392B519AD4CD20073FE8C /* TreeClimber.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB3F75DA19AC0CBC000904C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB92710919B6875400F6BA88 /* twl06.txt */,
+				AB3F75DB19AC0E27000904C5 /* sowpods.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB262C2819AAA84000420616 /* Anagrams */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB262C4919AAA84000420616 /* Build configuration list for PBXNativeTarget "Anagrams" */;
+			buildPhases = (
+				AB262C2519AAA84000420616 /* Sources */,
+				AB262C2619AAA84000420616 /* Frameworks */,
+				AB262C2719AAA84000420616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anagrams;
+			productName = Anagrams;
+			productReference = AB262C2919AAA84000420616 /* Anagrams.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB262C3E19AAA84000420616 /* AnagramsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB262C4C19AAA84000420616 /* Build configuration list for PBXNativeTarget "AnagramsTests" */;
+			buildPhases = (
+				AB262C3B19AAA84000420616 /* Sources */,
+				AB262C3C19AAA84000420616 /* Frameworks */,
+				AB262C3D19AAA84000420616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB262C4119AAA84000420616 /* PBXTargetDependency */,
+			);
+			name = AnagramsTests;
+			productName = AnagramsTests;
+			productReference = AB262C3F19AAA84000420616 /* AnagramsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB262C2119AAA84000420616 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Jonathan Underwood";
+				TargetAttributes = {
+					AB262C2819AAA84000420616 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = H9XBJUTC8E;
+					};
+					AB262C3E19AAA84000420616 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = AB262C2819AAA84000420616;
+					};
+				};
+			};
+			buildConfigurationList = AB262C2419AAA84000420616 /* Build configuration list for PBXProject "Anagrams" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB262C2019AAA84000420616;
+			productRefGroup = AB262C2A19AAA84000420616 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB262C2819AAA84000420616 /* Anagrams */,
+				AB262C3E19AAA84000420616 /* AnagramsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB262C2719AAA84000420616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB92710A19B6875400F6BA88 /* twl06.txt in Resources */,
+				AB262C3819AAA84000420616 /* Main.storyboard in Resources */,
+				AB262C3A19AAA84000420616 /* Images.xcassets in Resources */,
+				AB3F75DC19AC0E27000904C5 /* sowpods.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB262C3D19AAA84000420616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB92710B19B6875400F6BA88 /* twl06.txt in Resources */,
+				AB3F75DD19AC0E27000904C5 /* sowpods.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB262C2519AAA84000420616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB262C5119AAB75200420616 /* ResultsTableViewController.m in Sources */,
+				AB3F75D019AC0C4A000904C5 /* WordTree.m in Sources */,
+				AB262C3219AAA84000420616 /* AppDelegate.m in Sources */,
+				AB6392B619AD4CD20073FE8C /* TreeClimber.m in Sources */,
+				AB3F75D819AC0C7B000904C5 /* DictionaryImporter.m in Sources */,
+				AB3F75D419AC0C63000904C5 /* LetterNode.m in Sources */,
+				AB6392BA19AD53700073FE8C /* SearchViewController.m in Sources */,
+				AB262C2F19AAA84000420616 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB262C3B19AAA84000420616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6392B719AD4CD20073FE8C /* TreeClimber.m in Sources */,
+				AB262C4619AAA84000420616 /* AnagramsTests.m in Sources */,
+				AB3F75D119AC0C4A000904C5 /* WordTree.m in Sources */,
+				AB3F75D519AC0C63000904C5 /* LetterNode.m in Sources */,
+				AB3F75D919AC0C7B000904C5 /* DictionaryImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB262C4119AAA84000420616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB262C2819AAA84000420616 /* Anagrams */;
+			targetProxy = AB262C4019AAA84000420616 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB262C3619AAA84000420616 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB262C3719AAA84000420616 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB262C4719AAA84000420616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB262C4819AAA84000420616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB262C4A19AAA84000420616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Anagrams/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB262C4B19AAA84000420616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Anagrams/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AB262C4D19AAA84000420616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AnagramsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anagrams.app/Anagrams";
+			};
+			name = Debug;
+		};
+		AB262C4E19AAA84000420616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AnagramsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Anagrams.app/Anagrams";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB262C2419AAA84000420616 /* Build configuration list for PBXProject "Anagrams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB262C4719AAA84000420616 /* Debug */,
+				AB262C4819AAA84000420616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB262C4919AAA84000420616 /* Build configuration list for PBXNativeTarget "Anagrams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB262C4A19AAA84000420616 /* Debug */,
+				AB262C4B19AAA84000420616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB262C4C19AAA84000420616 /* Build configuration list for PBXNativeTarget "AnagramsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB262C4D19AAA84000420616 /* Debug */,
+				AB262C4E19AAA84000420616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB262C2119AAA84000420616 /* Project object */;
+}
