@@ -4,7 +4,9 @@ An off-the-top-of-my-head implementation of an anagram solver using a trie tree 
 
 This is a quick and dirty first pass so I have a jumping off point to learn Swift. The project features a few things to make learning swift more engaging than just a "Hello World" application such as a linked tree and async queues.
 
-The important things are the models. The view controllers are just to make it usable. 
+The important things are the models. The view controllers are just to make it usable.
+
+__Requires the latest Xcode 6 beta__
 
 ## License
 
