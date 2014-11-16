@@ -10,12 +10,13 @@
 
 @interface LetterNode : NSObject
 
-@property (nonatomic, strong) NSString *letterValue;
-@property (nonatomic, strong) NSMutableArray *childNodes;
+@property (nonatomic) char letter;
 @property (nonatomic) BOOL endOfWord;
 
-- (instancetype)initWithLetterValue:(NSString *)letter;
+- (instancetype)initWithLetter:(char)letter;
 
-- (LetterNode *)addChildLetter:(NSString *)letter;
+- (LetterNode *)addChildLetter:(char)letter;
+- (NSString *)letterValue;
+- (NSArray *)childNodes;
 
 @end

@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WordTree.h"
+
+@class LetterNode;
 
 @interface TreeClimber : NSObject
 
 @property (nonatomic, strong) NSMutableArray *results;
 
-- (instancetype)initWithWordTree:(WordTree *)wordTree andLetters:(NSString *)letters;
+- (instancetype)initWithTree:(LetterNode *)rootNode andLetters:(NSString *)letters;
 - (void)startClimbing;
 
 @end

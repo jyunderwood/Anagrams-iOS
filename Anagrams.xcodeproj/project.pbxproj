@@ -13,8 +13,6 @@
 		AB262C3A19AAA84000420616 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB262C3919AAA84000420616 /* Images.xcassets */; };
 		AB262C4619AAA84000420616 /* AnagramsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB262C4519AAA84000420616 /* AnagramsTests.m */; };
 		AB262C5119AAB75200420616 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB262C5019AAB75200420616 /* ResultsTableViewController.m */; };
-		AB3F75D019AC0C4A000904C5 /* WordTree.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75CF19AC0C4A000904C5 /* WordTree.m */; };
-		AB3F75D119AC0C4A000904C5 /* WordTree.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75CF19AC0C4A000904C5 /* WordTree.m */; };
 		AB3F75D419AC0C63000904C5 /* LetterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75D319AC0C63000904C5 /* LetterNode.m */; };
 		AB3F75D519AC0C63000904C5 /* LetterNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75D319AC0C63000904C5 /* LetterNode.m */; };
 		AB3F75D819AC0C7B000904C5 /* DictionaryImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3F75D719AC0C7B000904C5 /* DictionaryImporter.m */; };
@@ -51,8 +49,6 @@
 		AB262C4519AAA84000420616 /* AnagramsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnagramsTests.m; sourceTree = "<group>"; };
 		AB262C4F19AAB75200420616 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
 		AB262C5019AAB75200420616 /* ResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
-		AB3F75CE19AC0C4A000904C5 /* WordTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTree.h; sourceTree = "<group>"; };
-		AB3F75CF19AC0C4A000904C5 /* WordTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTree.m; sourceTree = "<group>"; };
 		AB3F75D219AC0C63000904C5 /* LetterNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetterNode.h; sourceTree = "<group>"; };
 		AB3F75D319AC0C63000904C5 /* LetterNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetterNode.m; sourceTree = "<group>"; };
 		AB3F75D619AC0C7B000904C5 /* DictionaryImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryImporter.h; sourceTree = "<group>"; };
@@ -108,8 +104,6 @@
 			children = (
 				AB3F75DA19AC0CBC000904C5 /* Resources */,
 				AB3F75CD19AC0C1A000904C5 /* Models */,
-				AB262C3019AAA84000420616 /* AppDelegate.h */,
-				AB262C3119AAA84000420616 /* AppDelegate.m */,
 				AB6392B819AD53700073FE8C /* SearchViewController.h */,
 				AB6392B919AD53700073FE8C /* SearchViewController.m */,
 				AB262C4F19AAB75200420616 /* ResultsTableViewController.h */,
@@ -124,6 +118,8 @@
 		AB262C2C19AAA84000420616 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB262C3019AAA84000420616 /* AppDelegate.h */,
+				AB262C3119AAA84000420616 /* AppDelegate.m */,
 				AB262C2D19AAA84000420616 /* Info.plist */,
 				AB262C2E19AAA84000420616 /* main.m */,
 			);
@@ -150,8 +146,6 @@
 		AB3F75CD19AC0C1A000904C5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AB3F75CE19AC0C4A000904C5 /* WordTree.h */,
-				AB3F75CF19AC0C4A000904C5 /* WordTree.m */,
 				AB3F75D219AC0C63000904C5 /* LetterNode.h */,
 				AB3F75D319AC0C63000904C5 /* LetterNode.m */,
 				AB3F75D619AC0C7B000904C5 /* DictionaryImporter.h */,
@@ -276,7 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB262C5119AAB75200420616 /* ResultsTableViewController.m in Sources */,
-				AB3F75D019AC0C4A000904C5 /* WordTree.m in Sources */,
 				AB262C3219AAA84000420616 /* AppDelegate.m in Sources */,
 				AB6392B619AD4CD20073FE8C /* TreeClimber.m in Sources */,
 				AB3F75D819AC0C7B000904C5 /* DictionaryImporter.m in Sources */,
@@ -292,7 +285,6 @@
 			files = (
 				AB6392B719AD4CD20073FE8C /* TreeClimber.m in Sources */,
 				AB262C4619AAA84000420616 /* AnagramsTests.m in Sources */,
-				AB3F75D119AC0C4A000904C5 /* WordTree.m in Sources */,
 				AB3F75D519AC0C63000904C5 /* LetterNode.m in Sources */,
 				AB3F75D919AC0C7B000904C5 /* DictionaryImporter.m in Sources */,
 			);

@@ -9,12 +9,12 @@
 #import "SearchViewController.h"
 #import "ResultsTableViewController.h"
 
+#import "LetterNode.h"
 #import "DictionaryImporter.h"
-#import "WordTree.h"
 #import "TreeClimber.h"
 
 @interface SearchViewController ()
-@property (nonatomic, strong) WordTree *wordTree;
+@property (nonatomic, strong) LetterNode *wordTree;
 @property (nonatomic, strong) NSArray *results;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *loadButton;
@@ -31,8 +31,9 @@
     self.loadProgress.alpha = 1;
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        DictionaryImporter *importer = [[DictionaryImporter alloc] init];
-        self.wordTree = [importer buildWordTree:^ (long total, long imported){
+        DictionaryImporter *importer = [[DictionaryImporter alloc] initWithDictionaryName:@"twl06"];
+
+        self.wordTree = [importer buildTreeWithProgress:^ (long total, long imported){
             dispatch_async(dispatch_get_main_queue(), ^{
                 float progress = (float)imported / (float)total;
                 self.loadProgress.progress = progress;
@@ -47,7 +48,7 @@
 }
 
 - (IBAction)searchButton:(id)sender {
-    TreeClimber *treeClimber = [[TreeClimber alloc] initWithWordTree:self.wordTree andLetters:self.lettersTextField.text];
+    TreeClimber *treeClimber = [[TreeClimber alloc] initWithTree:self.wordTree andLetters:self.lettersTextField.text];
     [treeClimber startClimbing];
 
     self.results = treeClimber.results;

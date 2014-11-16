@@ -10,38 +10,38 @@
 #import "LetterNode.h"
 
 @interface DictionaryImporter()
+@property (nonatomic, strong) NSArray *words;
 @end
 
 @implementation DictionaryImporter
 
-- (instancetype)init {
+- (instancetype)initWithDictionaryName:(NSString *)dictionaryName {
     self = [super init];
-    if (self) {
-        NSString *dictionaryPath = [[NSBundle mainBundle] pathForResource:@"twl06" ofType:@"txt"];
-        NSString* fileContents = [NSString stringWithContentsOfFile:dictionaryPath encoding:NSUTF8StringEncoding error:nil];
 
-        self.words = [fileContents componentsSeparatedByCharactersInSet: [NSCharacterSet newlineCharacterSet]];
+    if (self) {
+        NSString *dictionaryPath = [[NSBundle mainBundle] pathForResource:dictionaryName ofType:@"txt"];
+        NSString *fileContents = [NSString stringWithContentsOfFile:dictionaryPath encoding:NSUTF8StringEncoding error:nil];
+
+        _words = [fileContents componentsSeparatedByCharactersInSet: [NSCharacterSet newlineCharacterSet]];
     }
+
     return self;
 }
 
-- (WordTree *)buildWordTree:(void (^)(long total, long imported))progressBlock {
-    WordTree *wordTree = [[WordTree alloc] init];
+- (LetterNode *)buildTreeWithProgress:(void (^)(long, long))progressBlock {
+    NSDate *importStart = [NSDate date];
+
+    LetterNode *rootNode = [[LetterNode alloc] init];
 
     long wordsToImport = [self.words count];
     long numberImported = 0;
 
     for (NSString *word in self.words) {
-        LetterNode *previousLetter;
+        LetterNode *previousLetter = rootNode;
 
         for (int i=0; i < [word length]; i++) {
-            NSString *letter = [NSString stringWithFormat:@"%c", [word characterAtIndex:i]];
-
-            if (previousLetter) {
-                previousLetter = [previousLetter addChildLetter:letter];
-            } else {
-                previousLetter = [wordTree rootLetter:letter];
-            }
+            char letter = [word characterAtIndex:i];
+            previousLetter = [previousLetter addChildLetter:letter];
         }
 
         previousLetter.endOfWord = YES;
@@ -50,7 +50,11 @@
         progressBlock(wordsToImport, numberImported);
     }
 
-    return wordTree;
+    NSDate *importFinish = [NSDate date];
+    NSTimeInterval importTime = [importFinish timeIntervalSinceDate:importStart];
+    NSLog(@"Dictionary Import time: %f", importTime);
+
+    return rootNode;
 }
 
 @end

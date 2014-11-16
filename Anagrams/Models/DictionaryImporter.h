@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WordTree.h"
+
+@class LetterNode;
 
 @interface DictionaryImporter : NSObject
 
-@property (nonatomic, strong) NSArray *words;
-
-- (WordTree *)buildWordTree:(void (^)(long, long))progressBlock;
+- (instancetype)initWithDictionaryName:(NSString *)dictionaryName;
+- (LetterNode *)buildTreeWithProgress:(void (^)(long, long))progressBlock;
 
 @end

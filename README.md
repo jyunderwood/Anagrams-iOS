@@ -6,8 +6,6 @@ This is a quick and dirty first pass so I have a jumping off point to learn Swif
 
 The important things are the models. The view controllers are just to make it usable.
 
-__Requires the latest Xcode 6 beta__
-
 ## License
 
 The MIT License (MIT)

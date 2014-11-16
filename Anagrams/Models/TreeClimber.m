@@ -7,9 +7,10 @@
 //
 
 #import "TreeClimber.h"
+#import "LetterNode.h"
 
 @interface TreeClimber()
-@property WordTree *wordTree;
+@property LetterNode *rootNode;
 @property NSArray *letters;
 @end
 
@@ -17,11 +18,11 @@
 
 NSString *const WildCardLetter = @"?";
 
-- (instancetype)initWithWordTree:(WordTree *)wordTree andLetters:(NSString *)letters {
+- (instancetype)initWithTree:(LetterNode *)rootNode andLetters:(NSString *)letters {
     self = [super init];
     if (self) {
         _results = [[NSMutableArray alloc] init];
-        _wordTree = wordTree;
+        _rootNode = rootNode;
         _letters = [self sanitizeLetters:letters];
     }
     return self;
@@ -40,7 +41,7 @@ NSString *const WildCardLetter = @"?";
 
 - (void)startClimbing {
     NSString *emptyResult = @"";
-    [self climbBranches:self.wordTree.roots withLetters:self.letters andResult:emptyResult];
+    [self climbBranches:[self.rootNode childNodes] withLetters:self.letters andResult:emptyResult];
 }
 
 - (void)climbBranches:(NSArray *)childNodes withLetters:(NSArray *)letters andResult:(NSString *)result {

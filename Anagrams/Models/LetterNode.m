@@ -8,36 +8,50 @@
 
 #import "LetterNode.h"
 
+@interface LetterNode()
+@property (nonatomic, strong) NSMutableArray *nodes;
+@end
+
 @implementation LetterNode
 
-- (instancetype)initWithLetterValue:(NSString *)letter {
+- (instancetype)initWithLetter:(char)letter {
     self = [super init];
+
     if (self) {
-        _childNodes = [[NSMutableArray alloc] init];
-        _letterValue = letter;
+        _letter = letter;
+        _nodes = [[NSMutableArray alloc] init];
     }
+
     return self;
 }
 
-- (LetterNode *)addChildLetter:(NSString *)letter {
+- (instancetype)init {
+    return [self initWithLetter:'-'];
+}
+
+- (LetterNode *)addChildLetter:(char)letter {
     LetterNode *childNode;
 
     for (LetterNode *letterNode in self.childNodes) {
-        if ([letterNode.letterValue isEqualToString:letter]) {
+        if (letterNode.letter == letter) {
             childNode = letterNode;
         }
     }
 
     if (!childNode) {
-        childNode = [[LetterNode alloc] initWithLetterValue:letter];
-        [self.childNodes addObject:childNode];
+        childNode = [[LetterNode alloc] initWithLetter:letter];
+        [self.nodes addObject:childNode];
     }
 
     return childNode;
 }
 
-- (NSString *)description {
-    return self.letterValue;
+- (NSArray *)childNodes {
+    return [self.nodes copy];
+}
+
+- (NSString *)letterValue {
+    return [NSString stringWithFormat:@"%c", self.letter];
 }
 
 @end
