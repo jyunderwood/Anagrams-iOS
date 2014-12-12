@@ -54,4 +54,8 @@
     return [NSString stringWithFormat:@"%c", self.letter];
 }
 
+- (NSString *)description {
+    return [self letterValue];
+}
+
 @end

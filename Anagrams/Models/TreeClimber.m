@@ -16,8 +16,6 @@
 
 @implementation TreeClimber
 
-NSString *const WildCardLetter = @"?";
-
 - (instancetype)initWithTree:(LetterNode *)rootNode andLetters:(NSString *)letters {
     self = [super init];
     if (self) {
@@ -45,14 +43,7 @@ NSString *const WildCardLetter = @"?";
 }
 
 - (void)climbBranches:(NSArray *)childNodes withLetters:(NSArray *)letters andResult:(NSString *)result {
-    BOOL wildCardInLetters = [self wildCardInLetters:letters];
-    NSMutableArray *validNodes;
-
-    if (wildCardInLetters) {
-        validNodes = (NSMutableArray *)childNodes;
-    } else {
-        validNodes = [self findClimbableBranches:childNodes withLetters:letters];
-    }
+    NSMutableArray *validNodes = [self findClimbableBranches:childNodes withLetters:letters];
 
     for (LetterNode *node in validNodes) {
         NSMutableArray *remainingLetters;
@@ -62,12 +53,7 @@ NSString *const WildCardLetter = @"?";
             [self.results addObject:currentResult];
         }
 
-        if (wildCardInLetters) {
-            remainingLetters = [self removeWildCard:node.letterValue andLetters:letters];
-        } else {
-            remainingLetters = [self removeLetter:node.letterValue fromLetters:letters];
-        }
-
+        remainingLetters = [self removeLetter:node.letterValue fromLetters:letters];
         [self climbBranches:node.childNodes withLetters:remainingLetters andResult:currentResult];
     }
 }
@@ -87,35 +73,6 @@ NSString *const WildCardLetter = @"?";
     return validNodes;
 }
 
-- (BOOL)wildCardInLetters:(NSArray *)letters {
-    BOOL wildCardInLetters = NO;
-
-    for (NSString *letter in letters) {
-        if ([WildCardLetter isEqualToString:letter]) {
-            wildCardInLetters = YES;
-        }
-    }
-
-    return wildCardInLetters;
-}
-
-- (NSMutableArray *)removeWildCard:(NSString *)letterToRemove andLetters:(NSArray *)letters {
-    BOOL removeWildCard = NO;
-
-    NSArray *remainingLetters = letters;
-
-    for (NSString *letter in letters) {
-        if (![letterToRemove isEqualToString:letter]) {
-            removeWildCard = YES;
-        }
-    }
-
-    if (removeWildCard) {
-        remainingLetters = [self removeLetter:WildCardLetter fromLetters:letters];
-    }
-
-    return (NSMutableArray *)remainingLetters;
-}
 
 - (NSMutableArray *)removeLetter:(NSString *)letterToRemove fromLetters:(NSArray *)letters {
     NSMutableArray *remainingLetters = [[NSMutableArray alloc] initWithArray:letters];
