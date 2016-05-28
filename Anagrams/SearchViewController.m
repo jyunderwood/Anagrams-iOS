@@ -27,6 +27,33 @@
 @implementation SearchViewController
 
 - (IBAction)loadButton:(id)sender {
+    [self loadWithGCD]; // 3.45 sec Sim
+//    [self loadWithOperationQueue]; // 4.35 sec in Sim
+}
+
+- (void)loadWithOperationQueue {
+    self.loadButton.enabled = NO;
+    self.loadProgress.alpha = 1;
+
+    NSOperationQueue *backgroundQueue = [[NSOperationQueue alloc] init];
+    [backgroundQueue addOperationWithBlock:^{
+        DictionaryImporter *importer = [[DictionaryImporter alloc] initWithDictionaryName:@"twl06"];
+
+        self.wordTree = [importer buildTreeWithProgress:^ (long total, long imported){
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                float progress = (float)imported / (float)total;
+                self.loadProgress.progress = progress;
+            }];
+        }];
+
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            self.loadProgress.alpha = 0;
+            self.searchButton.enabled = YES;
+        }];
+    }];
+}
+
+- (void)loadWithGCD {
     self.loadButton.enabled = NO;
     self.loadProgress.alpha = 1;
 

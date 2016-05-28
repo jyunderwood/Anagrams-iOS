@@ -2,15 +2,11 @@
 
 An off-the-top-of-my-head implementation of an anagram solver using a trie tree in Objective-C.
 
-This is a quick and dirty first pass so I have a jumping off point to learn Swift. The project features a few things to make learning swift more engaging than just a "Hello World" application such as a linked tree and async queues.
-
-The important things are the models. The view controllers are just to make it usable.
-
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Jonathan Underwood
+Copyright (c) 2016 Jonathan Underwood
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
